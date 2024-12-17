@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>無語导航</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="keywords" content="网址导航" />
+    <meta name="description" content="一个简单美观可自定义的网址导航" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/yidong.css" />
+    <!-- 本项目开源地址：https://github.com/appexplore/jianavi 请勿完全抄袭源码，请勿声明自己是原创 -->
+</head>
+<style>
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+h2 {
+    color: #333;
+}
+
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#content {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="passwordPrompt">请输入密码：</h2>
+        <input type="password" id="passwordInput">
+        <button onclick="verifyPassword()">提交</button>
+
+        <div id="content" style="display: none;">
+            <!-- 这里放置您想要在输入正确密码后显示的内容 -->
+
+            <body>
+
+                <!-- 搜索栏start -->
+                <div class="baidu baidu-2">
+                    <form name="f" action="https://www.baidu.com/s" target="_blank">
+                        <div class="Select-box-2" id="baidu">
+                            <ul>
+                                <li class="this_s">百 度</li>
+                                <li class="miji_s">多 吉</li>
+                                <li class="bing_s">必 应</li>
+                                <li class="google_s">谷 歌</li>
+                                <li class="baidu_s">百 度</li>
+                            </ul>
+                        </div>
+                        <div class="in5">
+                            <input name="wd" id="kw-2" maxlength="100" autocomplete="off" type="text">
+                            <div class="qingkong" id="qingkong" title="清空">x</div>
+                        </div>
+                        <input value="搜 索" id="su-2" type="submit">
+                    </form>
+                    <ul class="keylist"></ul>
+                </div>
+                <!-- 搜索栏end -->
+
+                <!-- 内容start -->
+                <div class="body">
+                    <div class="content">
+                        <div class="jianjie">
+
+
+                            <div class="jj-list">
+                                <div class="jj-list-tit">NAS♦网站</div>
+                                <ul class="jj-list-con">
+                                    <li><a href="https://wj.371454510.xyz:7777" class="link-3" target="_blank"
+                                            rel="nofollow">文件管理</a></li>
+                                    <li><a href="https://un.371454510.xyz:7777" class="link-3" target="_blank"
+                                            rel="nofollow">UN服务器</a></li>
+                                    <li><a href="https://ik.371454510.xyz:7777" class="link-3" target="_blank"
+                                            rel="nofollow">爱快路由</a></li>
+                                    
+                                    <li><a href="https://nas.371454510.xyz:7777" class="link-3" target="_blank"
+                                            rel="nofollow">群晖NAS</a></li>
+                                
+                                    <li><a href="https://jsb.371454510.xyz:7777/#/signin" class="link-3" target="_blank"
+                                            rel="nofollow">群晖Note</a></li>
+                                    <li><a href="https://zp.371454510.xyz:7777" class="link-3" target="_blank"
+                                            rel="nofollow">群晖照片</a></li>
+                                    <li><a href="https://bg.371454510.xyz:7777" class="link-3" target="_blank"
+                                            rel="nofollow">群晖办公</a></li>
+                                    <li><a href="https://dy.371454510.xyz:7777/" class="link-3" target="_blank"
+                                            rel="nofollow">群晖电影</a></li>
+                                    <li><a href="https://ly.371454510.xyz:7777/" class="link-3" target="_blank"
+                                            rel="nofollow">反代理Lucky </a></li>
+                                    <li><a href="http://ha.371454510.xyz:8123" class="link-3" target="_blank"
+                                            rel="nofollow">HassOS</a></li>
+                                    <li><a href="http://nas.371454510.xyz:8081/" class="link-3" target="_blank"
+                                            rel="nofollow">签到</a></li>
+                                    <li><a href="https://nas.371454510.xyz:9007" class="link-3" target="_blank"
+                                            rel="nofollow">青龙面板</a></li>
+
+
+
+
+                            </div>
+
+
+                            <div class="jj-list">
+                                <div class="jj-list-tit">软件♦网站</div>
+                                <ul class="jj-list-con">
+                                    <li><a href="https://www.52pojie.cn" class="link-3" target="_blank"
+                                            rel="nofollow">吾爱破解</a></li>
+                                    <li><a href="https://www.mpyit.com" class="link-3" target="_blank"
+                                            rel="nofollow">老殁</a></li>
+                                    <li><a href="https://www.423down.com" class="link-3" target="_blank"
+                                            rel="nofollow">423Down</a></li>
+                                    <li><a href="https://adzhp.cn" class="link-3" target="_blank"
+                                            rel="nofollow">爱达杂货铺</a></li>
+                                    <li><a href="https://klyingshi.net/" class="link-3" target="_blank"
+                                            rel="nofollow">可乐影视</a></li>
+
+                                    <li><a href="https://msdn.itellyou.cn" class="link-3" target="_blank"
+                                            rel="nofollow">MSDN</a></li>
+
+                                    <li><a href="https://www.smzdm.com/" class="link-3" target="_blank"
+                                            rel="nofollow">什么值得买</a></li>
+                                    <li><a href="https://deershare.com/send" class="link-3" target="_blank"
+                                            rel="nofollow">小鹿快传</a></li>
+                                    <li><a href="https://www.ghxi.com/" class="link-3" target="_blank"
+                                            rel="nofollow">果核剥壳</a></li>
+                                    <li><a href="https://msdn.itellyou.cn/" class="link-3" target="_blank"
+                                            rel="nofollow">MSDN </a></li>
+                                    <li><a href="https://github.com/" class="link-3" target="_blank"
+                                            rel="nofollow">GitHub </a></li>
+                                    <li><a href="https://bemfa.com/" class="link-3" target="_blank" rel="nofollow">巴法云
+                                        </a></li>
+                                    <li><a href="//" class="link-3" target="_blank" rel="nofollow"></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="jj-list">
+                                <div class="jj-list-tit">Docker♦网站</div>
+                                <ul class="jj-list-con">
+                                    <li><a href="https://x.371454510.xyz:7777" class="link-3"
+                                            target="_blank" rel="nofollow">小爱音乐</a></li>
+                                    <li><a href="https://PDF.371454510.xyz:7777" class="link-3" target="_blank"
+                                            rel="nofollow">PDF工具箱</a></li>
+                                    <li><a href="https://ds.371454510.xyz:7777" class="link-3" target="_blank"
+                                            rel="nofollow">电视</a></li>
+                                    <li><a href="https://zp.371454510.xyz:7777" class="link-3" target="_blank"
+                                            rel="nofollow">照片</a></li>
+                                    <li><a href="http://192.168.1.8:11110/dy" class="link-3" target="_blank"
+                                            rel="nofollow">群晖电影</a></li>
+                                    <li><a href="http://192.168.1.207:8123" class="link-3" target="_blank"
+                                            rel="nofollow">HassOS</a></li>
+                                    <li><a href="http://192.168.1.8:8081/" class="link-3" target="_blank"
+                                            rel="nofollow">签到</a></li>
+                                    <li><a href="http://192.168.1.8:5700/login" class="link-3" target="_blank"
+                                            rel="nofollow">青龙面板</a></li>
+                                    <li><a href="https://nas.371454510.xyz:8086/#/" class="link-3" target="_blank"
+                                            rel="nofollow">密码管理</a></li>
+                                    <li><a href="https://fq2023.asia/1/" class="link-3" target="_blank"
+                                            rel="nofollow">书签</a></li>
+                                    <li><a href="//" class="link-3" target="_blank" rel="nofollow"></a></li>
+                                    <li><a href="//" class="link-3" target="_blank" rel="nofollow"></a></li>
+
+                                    <li><a href="//" class="link-3" target="_blank" rel="nofollow"></a></li>
+                                </ul>
+                            </div>
+
+
+
+                            <div class="jj-list">
+                                <div class="jj-list-tit">办公♦网站</div>
+                                <ul class="jj-list-con">
+                                    <li><a href="http://172.32.31.1/zh_cn/index.html" class="link-3" target="_blank"
+                                            rel="nofollow">公司防火墙</a></li>
+                                    <li><a href="http://oa.centuryrivercruises.com" class="link-3" target="_blank"
+                                            rel="nofollow">OA平台</a></li>
+                                    <li><a href="http://183.64.97.30:8890/" class="link-3" target="_blank"
+                                            rel="nofollow">数字化测试</a></li>
+                                    <li><a href="http://183.64.97.30:8888/" class="link-3" target="_blank"
+                                            rel="nofollow">测试环境配置</a></li>
+                                    <li><a href="https://travel.centurytrip.com/" class="link-3" target="_blank"
+                                            rel="nofollow">正试环境</a></li>
+                                    <li><a href="https://travel.centurytrip.com:8888/" class="link-3" target="_blank"
+                                            rel="nofollow">正试环境配置</a></li>
+                                            
+                                            
+                                     <li><a href="https://centurytrip001.pingcode.com/pjm/projects/SZ-CB/defect/66c5810b5816cd1f8088c2e9"
+                                            class="link-3" target="_blank" rel="nofollow">问题反馈-新</a></li>       
+                                    <li><a href="https://docs.qq.com/smartsheet/DTW1uSk1laEJDcHNU?tab=BB08J2&viewId=vUQPXH"
+                                            class="link-3" target="_blank" rel="nofollow">问题反馈</a></li>
+
+                                    <li><a href="http://oa.centurytrip.com/Login.aspx" class="link-3" target="_blank"
+                                            rel="nofollow">维修审核</a></li>
+                                    <li><a href="http://183.64.97.26:9350" class="link-3" target="_blank"
+                                            rel="nofollow">考勤</a></li>
+
+                                    <li><a href="https://nas.371454510.xyz:18081//" class="link-3" target="_blank"
+                                            rel="nofollow">思维导图</a></li>
+                                    <li><a href="http://www.cjh.com.cn/sssqw3.html?eqid=c6641cfc00065b6400000006644365a2/"
+                                            class="link-3" target="_blank" rel="nofollow">三峡水位</a></li>
+
+
+
+                                </ul>
+                            </div>
+
+                            <div class="jj-list">
+                                <div class="jj-list-tit">影视♦网站</div>
+                                <ul class="jj-list-con">
+                                    <li><a href="https://nas.371454510.xyz:9012/" class="link-3" target="_blank"
+                                            rel="nofollow">小雅</a></li>
+                                    <li><a href="https://555uu.shop/" class="link-3" target="_blank"
+                                            rel="nofollow">555电影</a></li>
+                                    <li><a href="https://www.bilibili.com/" class="link-3" target="_blank"
+                                            rel="nofollow">B站</a></li>
+                                    <li><a href="https://pan666.cn/" class="link-3" target="_blank"
+                                            rel="nofollow">阿里云搜索</a></li>
+
+                                    <li><a href="https://www.dy2018.com/" class="link-3" target="_blank"
+                                            rel="nofollow">电影天堂</a></li>
+                                    <li><a href="https://dianyi.ng/" class="link-3" target="_blank"
+                                            rel="nofollow">电影先生</a></li>
+                                    <li><a href="https://ddys.pro/" class="link-3" target="_blank"
+                                            rel="nofollow">低端影视</a></li>
+                                    <li><a href="https://www.youtube.com/" class="link-3" target="_blank"
+                                            rel="nofollow">youtube</a></li>
+                                    <li><a href="//" class="link-3" target="_blank" rel="nofollow"></a></li>
+                                    <li><a href="//" class="link-3" target="_blank" rel="nofollow"></a></li>
+                            </div>
+
+                            <div class="jj-list">
+                                <div class="jj-list-tit">教程♦网站</div>
+                                <ul class="jj-list-con">
+                                    <li><a href="https://bbs.hassbian.com/" class="link-3" target="_blank"
+                                            rel="nofollow">Hassos论坛 </a></li>
+                                    <li><a href="https://www.right.com.cn/forum/" class="link-3" target="_blank"
+                                            rel="nofollow">恩山无线论坛 </a></li>
+                                    <li><a href="https://discuss.espush.cn/t/24" class="link-3" target="_blank"
+                                            rel="nofollow">ESPush</a></li>
+                                    <li><a href="http://www.smartpi.cn/#/login" class="link-3" target="_blank"
+                                            rel="nofollow">智能公元</a></li>
+                                    <li><a href="https://tool.lu/hexstr/" class="link-3" target="_blank"
+                                            rel="nofollow">hex转str</a></li>
+                                    <li><a href="https://github.com/wfx111222333/IPTV" class="link-3" target="_blank"
+                                            rel="nofollow">IPTV源</a></li>
+                                    <li><a href="https://fanyi.baidu.com/" class="link-3" target="_blank"
+                                            rel="nofollow">翻译</a></li>
+                                    <li><a href="https://123.371454510.workers.dev/auto" class="link-3" target="_blank"
+                                            rel="nofollow">v12</a></li>
+                                    <li><a href="//" class="link-3" target="_blank" rel="nofollow"></a></li>
+                                    <li><a href="//" class="link-3" target="_blank" rel="nofollow"></a></li>
+                            </div>
+
+
+                            <div class="jj-list">
+                                <div class="jj-list-tit">工具♦网站</div>
+                                <ul class="jj-list-con">
+                                    <li><a href="https://www.photopea.com/" class="link-3" target="_blank"
+                                            rel="nofollow">在线修图</a></li>
+                                    <li><a href="https://cowtransfer.com/" class="link-3" target="_blank"
+                                            rel="nofollow">收发文件</a></li>
+                                    <li><a href="https://cli.im/" class="link-3" target="_blank" rel="nofollow">二维码</a>
+                                    </li>
+                                    <li><a href="https://convertio.co/zh/" class="link-3" target="_blank"
+                                            rel="nofollow">格式转换</a></li>
+                                    <li><a href="https://weibomiaopai.com/" class="link-3" target="_blank"
+                                            rel="nofollow">视频下载</a></li>
+                                    <li><a href="https://pdf.371454510.xyz:7777/?lang=zh_CN" class="link-3" target="_blank"
+                                            rel="nofollow">PDF工具箱</a></li>
+                                    <li><a href="https://www.storytrain.info//" class="link-3" target="_blank"
+                                            rel="nofollow">临时短信</a></li>
+                                    <li><a href="https://nas.371454510.xyz:18081/" class="link-3" target="_blank"
+                                            rel="nofollow">思维导图</a></li>
+
+
+
+                                </ul>
+                            </div>
+                            <div class="jj-list">
+                                <div class="jj-list-tit">软件♦链接</div>
+                                <ul class="jj-list-con">
+                                    <li><a href="https://wwp.lanzouq.com/b030o6gej/" class="link-3" target="_blank"
+                                            rel="nofollow">兰奏网盘</a></li>
+                                    <li><a href="https://wwzc.lanzouf.com/iOFGN0321rod" class="link-3" target="_blank"
+                                            rel="nofollow">密码插件</a></li>
+                                    <li><a href="https://www.lanzoub.com/i8nGg21s2kuj" class="link-3" target="_blank"
+                                            rel="nofollow">群晖记事本插件</a></li>
+                                    <li><a href="https://wwzc.lanzouf.com/iHOIdzbci8j" class="link-3" target="_blank"
+                                            rel="nofollow">系统激活</a></li>
+                                    <li><a href="https://wwzc.lanzouf.com/i1av30a02def" class="link-3" target="_blank"
+                                            rel="nofollow">文本编辑npp</a></li>
+                                    <li><a href="https://teyonds.lanzouw.com/s/tysj" class="link-3" target="_blank"
+                                            rel="nofollow">软件合集</a></li>
+                                    <li><a href="https://lanzoux.com/b133841/" class="link-3" target="_blank"
+                                            rel="nofollow">安卓软件</a></li>
+                                    <li><a href="https://new.fq666.us.kg/" class="link-3" target="_blank" rel="nofollow">新闻</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="jj-list">
+                                <div class="jj-list-tit">翻墙♦链接</div>
+                                <ul class="jj-list-con">
+                                    <li><a class="link-3" href="https://mail.proton.me/" target="_blank"
+                                            rel="nofollow noopener">proton邮箱</a></li>
+                                    <li><a class="link-3" href="http://www.gotolov.com/" target="_blank"
+                                            rel="nofollow noopener">向爱电影</a></li>
+                                    <li><a class="link-3" href="https://www.youtube.com/" target="_blank"
+                                            rel="nofollow noopener">youtube</a></li>
+                                    <li><a class="link-3" href="https://nas.371454510.xyz:8886/#s/-P6DOlKQ"
+                                            target="_blank" rel="nofollow noopener">VPN软件</a></li>
+                                    <li><a href="https://123.371454510.workers.dev/auto" class="link-3" target="_blank"
+                                            rel="nofollow">v12</a></li>
+                                    <li><a href="https://dash.cloudflare.com/" class="link-3" target="_blank"
+                                            rel="nofollow">域名解协</a></li>
+                                    <li><a href="https://www.mibei77.com//" class="link-3" target="_blank"
+                                            rel="nofollow">米贝分享</a></li>
+                                    <li><a href="https://nas.371454510.xyz:9012/tvbox/my.json" class="link-3"
+                                            target="_blank" rel="nofollow">TVBOX地址</a></li>
+
+                                </ul>
+                            </div>
+                            <!-- 
+				<div class="jj-list">
+					<div class="jj-list-tit">搜索 · 资源</div>
+					<ul class="jj-list-con">
+						<li><a href="https://www.cupfox.com/" class="link-3" target="_blank" rel="nofollow">茶杯狐</a></li>
+						
+						<li><a href="https://www.coolist.net/" class="link-3" target="_blank" rel="nofollow">酷软清单</a>
+						</li>
+						<li><a href="https://minapp.com/" class="link-3" target="_blank" rel="nofollow">知晓程序</a></li>
+						<li><a href="https://zhengbanxianmian.com/" class="link-3" target="_blank"
+								rel="nofollow">软件限免</a></li>
+						<li><a href="https://www.soukuzhan.com/" class="link-3" target="_blank"
+								rel="nofollow">搜酷站</a></li>
+						<li><a href="https://www.jiumodiary.com/" class="link-3" target="_blank" rel="nofollow">电子书</a>
+						</li>
+						<li><a href="https://pan.appts.cn/" class="link-3" target="_blank" rel="nofollow">常用软件</a>
+						</li>
+						<li><a href="http://www.zimuku.la/" class="link-3" target="_blank" rel="nofollow">字幕库</a></li>
+					</ul>
+				</div>
+			</div> -->
+                            <!-- 内容end -->
+
+
+                        </div>
+
+
+                        <script type="text/javascript" src="js/jquery.js"></script>
+                        <script type="text/javascript" src="js/js.js"></script>
+            </body>
+        </div>
+    </div>
+    <script>
+    document.getElementById('passwordInput').addEventListener('keyup', function (event) {
+        if (event.keyCode === 13) {
+            verifyPassword();
+        }
+    });
+
+    function verifyPassword() {
+        var correctPassword = "fq"; // 在这里设置正确的密码
+        var enteredPassword = document.getElementById('passwordInput').value;
+
+        if (enteredPassword === correctPassword) {
+
+            document.getElementById('passwordPrompt').style.display = 'none';
+            document.getElementById('passwordInput').style.display = 'none';
+            document.querySelector('button').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        } else {
+            alert('密码错误，请重新输入。');
+        }
+    }
+    </script>
+</body>
+
+
+
+
+
+</html>
